@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="app.js" />
+  </head>
+  <body>
+    {{if .Name}}
+        <h1>{{.Name}}</h1>
+    {{end}}
+    {{/* bisa mengunakan else if juga */}}
+    {{if.Phone}}
+        <h1>Phone : {{.Phone}}</h1>
+    {{else}}
+        <h1>No Phone number</h1>
+    {{end}}
+
+    {{if .Age}}
+        {{if ge .Age 25}}
+        <h1>Umur Lebih dari atau sama dengan 25 Tahun</h1>
+        {{end}}
+    {{else}}
+        <h1>No Age Info</h1>
+    {{end}}
+   
+  </body>
+</html>

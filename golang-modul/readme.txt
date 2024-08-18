@@ -1,0 +1,1 @@
+go mod init https://github.com/ugik-dev/go-learn-modul

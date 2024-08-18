@@ -1,0 +1,11 @@
+{
+  "NAme": "Ugik Dev",
+  "Age": 28,
+  "Married": true,
+  "Tags": ["Gaming", "Music", "Coding"],
+  "Address": {
+    "Street": "Totokarto",
+    "Country": "Indonesia",
+    "PostalCode": "33215"
+  }
+}

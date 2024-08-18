@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="app.js" />
+  </head>
+  <body>
+        <h1>Function dari struct</h1>
+        <h1>{{.SayHello "Vita"}}</h1>
+         <br>
+        <h1>Global Function Default</h1>
+        <h1>Panjang karakter : {{len "Vita"}}</h1>
+        <h1>Panjang karakter {{.Name}}: {{len .Name}}</h1>
+         <br>
+
+        <h3>Global Function Custom</h3>
+        {{/* <h2>func upper : {{upper "Vita"}}</h2> */}}
+        {{/* <h2>func upper  {{.Name}} : {{upper .Name}}</h2> */}}
+        {{/* <h2>func MyFunctionTest  : {{MyFunctionTest .Name}}</h2> */}}
+        {{/* <h2>func secound  : {{secound .Name}}</h2> */}}
+         <br>
+        <hr>
+        <h3>Pipilines Function Custom</h3>
+        <p>Hasil dari fungsi diteruskan ke fungsi berikutnya</p>
+        {{/* <h2>func upper : {{upper "yuvita tri rejeki" | secound }}</h2> */}}
+  </body>
+</html>

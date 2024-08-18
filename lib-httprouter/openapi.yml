@@ -1,0 +1,35 @@
+openapi: '3.0.3'
+info:
+  title: API Learn Go-Lang By Ugik DEV
+  description: Ini merupakan OpenAPI Learn Go-Lang
+  version: '1.0'
+  contact:
+    name: Ugik Developer
+    email: ugik.dev@gmail.com
+    url: https://ugikdev.site
+  license:
+    name: APACHE 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+servers: [
+  {
+    url: "https://{environment}.ugikdev.site/api/v1/",
+    description: "Description of servers",
+    variables:
+      {
+        environment : {
+          default: Dev,
+          description: "Development environment",
+          enum:
+            [
+            "dev", "prod", "qa"
+            ]
+        }
+      }
+  }
+]
+paths:
+  /test:
+    get:
+      responses:
+        '200':
+          description: OK
